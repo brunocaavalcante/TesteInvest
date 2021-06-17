@@ -1,0 +1,16 @@
+<h1>Cadastro</h1>
+
+<form #f="ngForm" (ngSubmit)="Salvar(f)">
+    <div class="mb-3">
+        <label for="parcelas" class="form-label">Parcelas</label>
+        <input type="number" name="parcelas" class="form-control" [(ngModel)]="parcelas" required>
+    </div>
+    <div class="mb-3">
+        <label for="valor" class="form-label">Valor</label>
+        <input type="number" name="valor" class="form-control" [(ngModel)]="valor" required>
+    </div><br>
+
+    <h6>Valor final é: {{cadastro.valorFinal}}</h6><br>
+
+    <button type="submit" class="btn btn-primary">Salvar</button>
+</form>
